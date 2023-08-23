@@ -1,0 +1,182 @@
+*{ 
+    padding    : 0; 
+    margin     : 0; 
+    box-sizing : border-box; 
+} 
+ 
+body{ 
+    background  : #dedede; 
+    font-family : 'arial','sans-serif'; 
+    font-size   : 15px; 
+} 
+ 
+p{ 
+    margin-bottom : 20px; 
+    line-height   : 1,5em; 
+} 
+
+a{ 
+  text-decoration : none; 
+  color           : #000000;   
+} 
+ 
+a:hover{ 
+    color: #fa0505; 
+} 
+ 
+.container{ 
+    background: white;
+}  
+ 
+.header{ 
+    border     : 1px solid #dedede; 
+    padding    : 10px; 
+    margin     : 10px; 
+    background : #A0C49D;
+} 
+
+/*main*/ 
+.left{ 
+    width   : 250px; 
+    border  : 1px solid #dedede; 
+    padding : 10px; 
+    margin  : 10px;
+    float   : left;
+    background-color: #C4D7B2; 
+} 
+ 
+.left ul{ 
+    list-style-type : none; 
+} 
+ 
+.left ul li{ 
+    display         : block; 
+} 
+ 
+.left ul li a{ 
+    display: block; 
+    border-bottom: 1px solid #dedede; 
+    margin-bottom: 10px; 
+    padding: 10px 5px;
+    font-weight: bold; 
+    color: #000000; 
+} 
+ 
+.left ul li a:hover{ 
+    color: red; 
+}
+    
+.middle{ 
+    width    : 785px; 
+    padding  : 10px; 
+    margin   : 10px; 
+    float    : left;
+} 
+ 
+.middle img{ 
+    max-width: 65%; 
+    height   : auto; 
+} 
+ 
+.middle a{ 
+    font-weight  : bold; 
+} 
+ 
+.right{ 
+    width  : 250px; 
+    border : 1px solid #dedede; 
+    padding: 10px; 
+    margin : 10px; 
+    float  : left;
+    background-color: #C4D7B2;
+} 
+
+.right ul{ 
+    list-style-type  : none; 
+} 
+ 
+.right ul li{ 
+    display  : block; 
+} 
+ 
+.right ul li a{ 
+    display         : block; 
+    border-bottom   : 1px solid #dedede; 
+    margin-bottom   : 10px; 
+    padding         : 10px 5px; 
+} 
+ 
+.right ul li a:hover{ 
+    color: red; 
+} 
+ 
+.footer{ 
+    clear: both; 
+    border: 1px solid #dedede; 
+    padding: 15px; 
+    margin: 10px; 
+    background: #d6ccfe; 
+} 
+ 
+@media screen and (max-width: 959px){ 
+    #container{ 
+        width: 100%; 
+    } 
+    #left-column{ 
+        width: 30%; 
+    }
+    #middle-column{
+        width: 60%;
+    }
+    #right-column{ 
+        width: 30%; 
+    }
+    img{ 
+        width: 50%;
+        height: 50%; 
+    } 
+} 
+ 
+/*MEDIA QUERIES(Responsive) 
+**************************************************************/ 
+@media screen and (max-width: 1080px){ 
+    .container{ 
+        width: 100%; 
+    } 
+    .left{ 
+        width: 25%; 
+        background: #d6ccfe; 
+    } 
+    .middle{ 
+        width: 50%; 
+        float: right; 
+    } 
+    .right{ 
+        clear: both; 
+        padding: 1% 4%; 
+        width: 25%; 
+        float: none; 
+        background: #d6ccfe; 
+    } 
+} 
+ 
+/*untuk ukuran layar 700px kebawah*/ 
+@media screen and (max-width: 780px){ 
+    .header, 
+    .footer{ 
+        text-align: center; 
+    } 
+    .left{ 
+        width: auto; 
+        float: none; 
+    } 
+    .middle{ 
+        width: auto; 
+        float: none; 
+    } 
+    .right{ 
+        width: auto; 
+        float: none; 
+    } 
+} 
+

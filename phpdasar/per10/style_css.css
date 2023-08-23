@@ -1,0 +1,39 @@
+/* pseduo class link */
+.hello:link {
+    color: orange;
+}
+.hello:hover {
+    color: green;
+    font-family: arial;
+    font-size: 20px;
+}
+.hello:active {
+    font-style: italic;
+}
+.helo:visited {
+    color: red;
+}
+/* css carika a, didalam li ynag merupakan anak pertama */
+li:first a{
+    color: green;
+}
+/* css carika a, didalam li ynag merupakan anak pertama */
+li:last-child{
+    color: green;
+}
+/* css carika a, didalam li ynag merupakan anak genap */
+li:nth-child(even){
+    color: green;
+}
+/* css carika a, didalam li ynag merupakan anak ganjil */
+li:nth-child(ood){
+    color: violet;
+}
+/* css carika p, didalam halaman yang urutannya pertama */
+li:first-of-type{
+    color: red;
+}
+/* css carika p, didalam halaman yang urutannya terakhir */
+li:last-of-type{
+    color: orange;
+}

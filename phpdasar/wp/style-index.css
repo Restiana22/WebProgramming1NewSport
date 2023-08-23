@@ -1,0 +1,474 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:var(--bg) ;
+    color: antiquewhite;
+    min-height: 3000px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content:space-between ;
+    align-items:center ;
+    padding: 1.5rem 7%;
+    background-color: #5c8779;
+    border: bottom 1px solid var(--primary) ;
+    position:fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+ .navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic  ;
+ }
+
+ .navbar .navbar-logo span {
+    color: var(--primary);
+ }
+
+ .navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin:0 1rem ;
+ }
+
+ .navbar .navbar-nav a:hover {
+    color: var(--primary);
+ }
+
+ .navbar .navbar-nav a ::after {
+    content: '';
+    display: block;
+    padding-bottom: 0,rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+ }
+
+ .navbar .navbar-nav a ::after {
+    transform: scaleX(0.2);
+ }
+
+ .navbar .navbar-extra a {
+    color: #fff;
+    margin: 0.5rem;
+ }
+
+ .navbar .navbar-extra a:hover {
+    color: var(--primary);
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+
+
+
+.body {
+    margin: 0;
+    font-family: "Helvetica Neve", Impact, Haettenschweiler, Arial, sans-serif;
+    font-size: 14px;
+    color: #373737;
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+.center {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+
+/* style header */
+.header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .logo .img{
+    width: 200px;
+    height: 150px;
+}
+
+.header .menu {
+    float: right;
+ }
+
+.header .menu ul li {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.header .menu ul li a{
+    display: inline-block;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    color: #373737;
+    text-decoration: none;
+}
+
+.header .menu ul li a:hover {
+    color: #354559;
+}
+
+/* style recomnews */
+.recomnews {
+    padding: 20px 0 5px;
+}
+
+.recomnews .judul {
+    text-transform: uppercase;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.recommen {
+    width: 1000px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.recommen .recomKiri {
+    width: 475px;
+    float: left;
+    margin-right: 5px;
+    padding: 0px 10px 10px 10px;
+    background: #c0c0c0;
+}
+
+.recommen p {
+    text-align: justify;
+}
+.recommen img{
+    width: 300px;
+    height: 170px;
+    box-shadow: 5px 5px 2px #333;
+}
+.recommen h3{
+    font-size: 15px;
+}
+.recommen .recomenKanan {
+    width: 475px;
+    float: left;
+    margin-left: 5px;
+    padding: 0px 10px 10px 10px;
+    background: #c0c0c0;
+}
+.recommen a{
+    text-decoration: none;
+    color: black;
+}
+
+.recommen h3 a:hover {
+    color: brown;
+}
+.recommen .button a {
+    display: inline-block;
+    padding: 3px 7px;
+    border: solid 2px #ffff;
+    text-decoration: none;
+    color: #ffff;
+}
+.recommen .button a:hover {
+    background: #ffff;
+    color: #0b64cd;
+}
+
+/* style terbaru */
+.hot {
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style Kontak Form */
+.kontakForm {
+    background: #d7d7d7;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+.kontakForm h3 {
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-size: 24px;
+    font-weight: normal;
+}
+.subcribe .button {
+    display: block;
+    width: 180px;
+    height: 60px;
+    position: relative;
+    border: 2px solid #c6c6c6;
+    border-radius: 5px;
+    background-color: #c6c6c6;
+    margin-right: 550px;
+    float: right;
+}
+.subcribe .button input [type=submit] {
+    display: block;
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    background-color: #09f;
+    color: #ffff;
+    text-transform: uppercase;
+    box-shadow: 0  6px 0 #06c;
+    border-radius: 5px;
+    transition: all 0.1s linear;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tooltip:after {
+    position: absolute;
+    content: '';
+    left: 10px;
+    bottom: -5px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #09f;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+.button:hover .tooltip {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+input[type=email] {
+    width: 220px;
+    height: 30px;
+    margin-top: 10px;
+}
